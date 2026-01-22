@@ -1,0 +1,7 @@
+/target/
+# Eclipse project files
+.classpath
+.project
+.settings/
+# TestNG output
+test-output/
