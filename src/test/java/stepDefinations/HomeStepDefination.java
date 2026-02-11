@@ -71,7 +71,8 @@ public class HomeStepDefination {
 	@When("Clicked on the tab {string}")
 	public void clicked_on_the_tab(String tabName) throws InterruptedException {
 		Thread.sleep(1000L);
-		homePagePO.clickTab(tabName);
+		HomePagePO.Tab tab = HomePagePO.Tab.valueOf(tabName.toUpperCase()); // convert string to enum
+        homePagePO.clickTab(tab);
 	}
 
 }
