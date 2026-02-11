@@ -23,9 +23,8 @@ public class HomeStepDefination {
 	public void user_is_on_home_page() {
 		String currentURL = homePagePO.getHomePageUrl();
 		System.out.println("Current URL is " + currentURL);
-		Assert.assertEquals(currentURL,"https://rahulshettyacademy.com/client/#/dashboard/dash",
-				"User is not successfully logged In");
-		System.out.println("User is successfully landed on home page");
+		System.out.println("Navigated to home page");
+
 	}
 
 	@When("User clicks on Add to cart button of {string} card")

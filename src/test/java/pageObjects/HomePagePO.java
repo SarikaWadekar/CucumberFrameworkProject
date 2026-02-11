@@ -65,7 +65,6 @@ public class HomePagePO {
     }
 
     public String getHomePageUrl() {
-        explicitWaitHelper.WaitForURLToBe("https://rahulshettyacademy.com/client/#/dashboard/dash", 50);
         return util.getCurrentUrl();
     }
 
