@@ -1,7 +1,9 @@
 Feature: Place Order
 
-  Scenario: place order validation
+	Background:
     Given User is on home page
+
+  Scenario: place order validation
     When User clicks on Add to cart button of "Sarqwerty" card
     And Wait for invisibility of element
     And Clicked on the tab "Cart"
@@ -12,7 +14,6 @@ Feature: Place Order
     And assertAll validations
     
    Scenario:  Insuffient information to place order
-    Given User is on home page
     When User clicks on Add to cart button of "Sarqwerty" card
     And Wait for invisibility of element
     And Clicked on the tab "Cart"

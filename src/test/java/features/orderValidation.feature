@@ -1,7 +1,9 @@
 Feature: Order
 
-  Scenario: order validation
+	Background:
     Given User is on home page
+
+  Scenario: order validation
     When User clicks on Add to cart button of "Sarqwerty" card
     And Wait for invisibility of element
     And Clicked on the tab "Cart"
