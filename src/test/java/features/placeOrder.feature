@@ -5,7 +5,7 @@ Feature: Place Order
     Given User is on home page
 
   Scenario: place order validation
-    When User clicks Add to cart button for "Sarqwerty" card and waits until the toast disappears
+    When User clicks Add to cart button of "Sarqwerty" card and waits until the toast disappears
     And Clicked on the tab "Cart"
     And Placed the order selecting country as "India"
     Then toast message should be displayed " Order Placed Successfully " 
@@ -14,7 +14,7 @@ Feature: Place Order
     And assertAll validations
     
    Scenario:  Insuffient information to place order
-    When User clicks Add to cart button for "Sarqwerty" card and waits until the toast disappears
+    When User clicks Add to cart button of "Sarqwerty" card and waits until the toast disappears
     And Clicked on the tab "Cart"
     And Placed the order selecting country as ""
     Then toast message should be displayed " Please Enter Full Shipping Information "
