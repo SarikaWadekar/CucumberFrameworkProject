@@ -11,8 +11,7 @@ Feature: Add product to cart
     And assertAll validations
     
    Scenario: Added product should be displayed in cart
-    When User clicks on Add to cart button of "Sarqwerty" card
-    And Wait for invisibility of element
+    When User clicks Add to cart button for "Sarqwerty" card and waits until the toast disappears
     And Clicked on the tab "Cart"
     Then Added product "Sarqwerty" should be displayed in cart 
     And assertAll validations

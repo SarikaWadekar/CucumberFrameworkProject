@@ -33,8 +33,10 @@ public class HomeStepDefination {
 		System.out.println("Clicked on Add To Cart button");
 	}
 	
-	@When("Wait for invisibility of element")
-	public void wait_for_invisibility_of_element() {
+	@When("User clicks Add to cart button for {string} card and waits until the toast disappears")
+	public void user_clicks_add_to_cart_button_for_card_and_waits_until_the_toast_disappears(String expectedCard) {
+		homePagePO.clickSpecificAddToCartButton(expectedCard.toUpperCase());
+		System.out.println("Clicked on Add To Cart button");
 		homePagePO.explicitWaitForInvisibilityOfElement();
 	}
 	
