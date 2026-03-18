@@ -1,9 +1,10 @@
-@order
+
 Feature: Order
 
 	Background:
     Given User is on home page
 
+  @order
   Scenario: order validation
     When User clicks Add to cart button of "Sarqwerty" card and waits until the toast disappears
     And Clicked on the tab "Cart"

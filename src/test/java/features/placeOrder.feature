@@ -1,9 +1,10 @@
-@order
+
 Feature: Place Order
 
 	Background:
     Given User is on home page
 
+  @order
   Scenario: place order validation
     When User clicks Add to cart button of "Sarqwerty" card and waits until the toast disappears
     And Clicked on the tab "Cart"
@@ -13,6 +14,7 @@ Feature: Place Order
     And "Sarqwerty" product name should be displayed on order summary page
     And assertAll validations
     
+   @order 
    Scenario:  Insuffient information to place order
     When User clicks Add to cart button of "Sarqwerty" card and waits until the toast disappears
     And Clicked on the tab "Cart"
